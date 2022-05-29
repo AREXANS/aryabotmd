@@ -84,8 +84,6 @@ let tebakkalimat = db.game.kalimat = []
 let tebaklirik = db.game.lirik = []
 let tebaktebakan = db.game.tebakan = []
 let vote = db.others.vote = []
-readGc = true 
-readPc = true
 //DATABASE
 let pendaftar = JSON.parse(fs.readFileSync('./storage/user/user.json'))
 let balance = JSON.parse(fs.readFileSync('./database/balance.json'));
@@ -1191,7 +1189,7 @@ let txtf =`© 𝘈𝘳𝘺𝘢𝘢 ×፝֟͜×`
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: 'Website',
+                                    displayText: 'Whatsapp',
                                     url: 'https://bit.ly/WHATSAPPOWNER'
                                 }
                             }]
@@ -1201,6 +1199,7 @@ mans.send5ButImg(m.chat, listmn, txtf, global.thumb, kontol)
 case 'grupbot':
 case 'groupbot':
 case 'botgrup':
+case 'gcbot':
 fakey(`https://chat.whatsapp.com/LA3er9fsk891HtvVkisuza`)
 break
 case 'limit':
@@ -1214,11 +1213,8 @@ mans.sendMessage(from, {sticker:{url:"https://ZackMans.github.io/media/groupclos
 }
 break
 //TEXT PRO CUY
-case 'hoorror':{
-	if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
-     let link = `https://textpro.me/horror-blood-text-effect-online-883.html`
+case 'horror':{
+	     let link = `https://textpro.me/horror-blood-text-effect-online-883.html`
      let anui = await textpro(link, q)
      fakey(`Tunggu Sebentar Sedang Membuat Makernya Sekitar 1 Menit Kurang`) 
      console.log(anui)
@@ -1226,10 +1222,7 @@ case 'hoorror':{
 }
    break
   case 'whitebear':{
-   if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
-     let link = `https://textpro.me/online-black-and-white-bear-mascot-logo-creation-1012.html`
+        let link = `https://textpro.me/online-black-and-white-bear-mascot-logo-creation-1012.html`
      let anui = await textpro(link, q)
      fakey(`Tunggu Sebentar Sedang Membuat Makernya Sekitar 1 Menit Kurang`) 
      console.log(anui)
@@ -1237,10 +1230,7 @@ case 'hoorror':{
 }
    break
 case 'thunder':{
-	if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
-     let link = `https://textpro.me/create-thunder-text-effect-online-881.html`
+	     let link = `https://textpro.me/create-thunder-text-effect-online-881.html`
      let anui = await textpro(link, q)
      fakey(`Tunggu Sebentar Sedang Membuat Makernya Sekitar 1 Menit Kurang`) 
      console.log(anui)
@@ -1248,10 +1238,7 @@ case 'thunder':{
 }
    break
 case 'blackpink':{
-	if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
-     let link = `https://textpro.me/create-blackpink-logo-style-online-1001.html`
+	     let link = `https://textpro.me/create-blackpink-logo-style-online-1001.html`
      let anui = await textpro(link, q)
      fakey(`Tunggu Sebentar Sedang Membuat Makernya Sekitar 1 Menit Kurang`) 
      console.log(anui)
@@ -1637,10 +1624,6 @@ let anui = await textpro(link, q)
 //WM By Rizki
 case 'pornhub':{
 if(!q) return m.reply(`Example: ${prefix + command} ajg | ea`)
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
-fakey(mess.wait)
   inilogo4 = args.join(" ")
 inilogo9 = args.join(" ")
    var logo4 = inilogo4.split('|')[0]
@@ -1652,10 +1635,6 @@ mans.sendMessage(from,{image:{url:anu}, caption:"Done!"},{quoted:m})
 break
 case 'retro':{
 if(!q) return m.reply(`Example: ${prefix + command} ajg | ea`)
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
-fakey(mess.wait)
   inilogo4 = args.join(" ")
 inilogo9 = args.join(" ")
    var logo4 = inilogo4.split('|')[0]
@@ -1667,10 +1646,6 @@ mans.sendMessage(from,{image:{url:anu}, caption:"Done!"},{quoted:m})
 break
 case 'horror':{
 if(!q) return m.reply(`Example: ${prefix + command} ajg | ea`)
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
-fakey(mess.wait)
   inilogo4 = args.join(" ")
 inilogo9 = args.join(" ")
    var logo4 = inilogo4.split('|')[0]
@@ -1681,9 +1656,6 @@ mans.sendMessage(from,{image:{url:anu}, caption:"Done!"},{quoted:m})
 }
 break
 case '8bit':{
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
 if(!q) return m.reply(`Example: ${prefix + command} ajg | ea`)
 fakey(mess.wait)
   inilogo4 = args.join(" ")
@@ -1696,9 +1668,6 @@ mans.sendMessage(from,{image:{url:anu}, caption:"Done!"},{quoted:m})
 }
 break
 case 'textmaker': {
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
 if (isBan) return m.reply(mess.ban)
 if (args.length < 1) return m.reply(`Example :\n${prefix + command} <name>`)
 if (args[0] === 'glitch') {
@@ -2206,9 +2175,6 @@ case 'coffe': case 'kopi': {
 case 'emoji': {
 if (isBan) return m.reply(mess.ban)
 if (!args.join(" ")) return m.reply('emojinya?')
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
 emoji.get(args.join(" ")).then(async(emoji) => {
 let mese = await mans.sendMessage(m.chat, {image:{url:emoji.images[4].url}, caption:"Done!"}, {quoted:m})
 await mans.sendMessage(from, {text:"s"}, {quoted:mese})
@@ -2557,7 +2523,7 @@ if (!args.join(" ")) return m.reply(`Text mana?\n\nExample : ${prefix + command}
 		m.reply('Sukses Broadcast')
             }
             break
-case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh': {
+case 'hhalah': case 'hhilih': case 'hhuluh': case 'hheleh': case 'hholoh': {
 if (isBan) return m.reply(mess.ban)
 if (!m.quoted && !args.join(" ")) return m.reply(`Kirim/reply text dengan caption ${prefix + command}`)
 ter = command[1].toLowerCase()
@@ -3686,9 +3652,6 @@ case 'bass': case 'blown': case 'deep': case 'earrape': case 'fast': case 'fat':
 case 'nulis': {
 if (isBan) return m.reply(mess.ban)
 if (args.length < 1) return m.reply(`Example :\n${prefix}nulis hai|91|#ff020a|Manusia terganteng adalah salman alfarizi`)
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
 const nls = args.join(" ")
 const nams = "Nama : " + nls.split("|")[0];
 const kels = "Kelas : " + nls.split("|")[1];
@@ -3862,10 +3825,7 @@ case 'speedtest': {
             break
 case 'emojimix2': {
 	    if (!text) return fakey(`Example : ${prefix + command} 😅`)
-	if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
-		let anu = await fetchJson(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(text)}`)
+			let anu = await fetchJson(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(text)}`)
 		for (let res of anu.results) {
 		    let encmedia = await mans.sendImageAsSticker(m.chat, res.url, m, { packname: global.packname, author: global.author, categories: res.tags })
 		    await fs.unlinkSync(encmedia)
@@ -3979,9 +3939,6 @@ m.reply(`⭔ _*Title :*_ ${cerpe.title}\n⭔ _*Author :*_ ${cerpe.author}\n⭔ _
 }
 break
 case 'tourl':{
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
 if (isBan) return m.reply(mess.ban)
 fakey(mess.wait)
 let { UploadFileUgu, webp2mp4File, TelegraPh } = require('./lib/uploader')
@@ -4015,39 +3972,6 @@ m.reply(namenye)
 } else if (qtod === "false") {
 mans.sendMessage(from, {text:"Reply orangnya"}, {quoted:m})
 }
-}
-break
-case 'autoread':
-if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
-if (args.length < 1) return reply(`Example:\n${prefix}autoread gc on`)
-if (args[0] === "gc") {
-if (args.length < 2) return reply(`Example:\n${prefix}autoread gc on`)
-if (args[1] === "on") {
-if (readGc === true) return reply(lang.anjawaUdhOn(command))
-readGc = true
-reply(`Succes mengaktifkan autoread group`)
-} else if (args[1] === "off") {
-if (readGc === false) return
-readGc = false
-reply(`Succes mematikan autoread group`)
-} else {
-reply(`Pilih on atau off`)
-}
-} else if (args[0] === "pc") {
-if (args.length < 2) return reply(`Example:\n${prefix}autoread pc on`)
-if (args[1] === "on") {
-if (readPc === true) return reply(lang.anjawaUdhOn(command))
-readPc = true
-reply(`Succes mengaktifkan autoread pc`)
-} else if (args[1] === "off") {
-if (readPc === false) return
-readPc = false
-reply(`Succes mematikan autoread pc`)
-} else {
-reply(`Pilih on atau off`)
-}
-} else {
-reply(`*List Auto Read*\n•> gc\n•> pc`)
 }
 break
 case 'getpic': {
@@ -4106,12 +4030,12 @@ footer: "© Aryaa ×፝֟͜×",
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"NOMOR BOT WHATSAPP, MULTI DEVICE TERBARU FITUR BERJIBUN - ZackMans",
+title:"NOMOR BOT WHATSAPP",
 body:"© Aryaa ×፝֟͜×",
 thumbnail: log0,
 mediaType:2,
-mediaUrl: "https://youtube.com/watch?v=w6w0cy_1HY4",
-sourceUrl: "https://youtube.com/watch?v=w6w0cy_1HY4"
+mediaUrl: "https://arexans.github.io/",
+sourceUrl: "https://arexans.github.io/"
 }}
 }
 mans.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -4119,10 +4043,6 @@ mans.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 break
 case 'google': {
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
-fakey(mess.wait)
 if (isBan) return m.reply(mess.ban)
 if (!args[0]) return m.reply(`Example: ${prefix + command} <query>\nUses : ${prefix + command} apa arti cinta`)
 let google = require('google-it')
@@ -4140,9 +4060,6 @@ break
 case 'igstory': case 'instagramstory': {
 if (isBan) return m.reply(mess.ban)
 if (!args[0]) return m.reply(`Example :\n${prefix + command} salman_alfarizi_15`)
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
 try {
 hx.igstory(args[0]).then(async(resed) => {
 ini_anu = []
@@ -4177,9 +4094,6 @@ m.reply(String(err))
 }
 break
 case 'igdl': case 'instagram': {
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
 if (isBan) return m.reply(mess.ban)
 if (!args[0]) return m.reply(`Example :\n${prefix + command} https://www.instagram.com/p/CcvJGuxh9VI/?igshid=YmMyMTA2M2Y=`)
 try {
@@ -4226,9 +4140,6 @@ m.reply(" Error! ")
 }
 break
 case 'mp4' : {
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
 if (isBan) return m.reply(mess.ban)
 if (!args[0]) return m.reply("Linknya mana kak?")
 try {
@@ -4301,9 +4212,6 @@ m.reply(" Link Error!")
 }
 break
 case 'twddl': {
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
 if (isBan) return m.reply(mess.ban)
 let buttons = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
@@ -4327,9 +4235,6 @@ mans.sendMessage(from, buttonMessage, {quoted:m})
 }
 break
 case 'facebook': case 'fbdl': case 'fbmp4': case 'fb': {
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
 if (isBan) return m.reply(mess.ban)
 if (!args[0]) return m.reply(`Example :\n${prefix + command} https://fb.watch/cAX2dep-BZ/`)
 try {
@@ -4368,9 +4273,6 @@ break
 case 'fbddl': {
  fakey(mess.wait)
 if (isBan) return m.reply(mess.ban)
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
 let buttons = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
 ]
@@ -4394,9 +4296,6 @@ mans.sendMessage(from, buttonMessage, {quoted:m})
 break
 case 'tiktokaudio':
 case 'tiktokmusic':{
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
   if (!q) return reply('Linknya?')
   if (!q.includes('tiktok')) return reply('Itu bukan link tiktok!')
    const musim_rambutan = await TiktokDownloader(`${q}`).catch(e => {
@@ -4409,9 +4308,6 @@ if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan car
  break
 
   case 'tiktok':{
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
   if (!q) return reply('Linknya?')
   fakey(mess.wait)
   if (!q.includes('tiktok')) return reply('Itu bukan link tiktok!')
@@ -4424,10 +4320,7 @@ if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan car
    }
   break
   case 'tiktoknowm':{
-  if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
-  if (!q) return reply('Linknya?')
+    if (!q) return reply('Linknya?')
   fakey(mess.wait)
   if (!q.includes('tiktok')) return reply('Itu bukan link tiktok!')
    const musim_rambutan = await TiktokDownloader(`${q}`).catch(e => {
@@ -4439,10 +4332,7 @@ if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan car
    }
   break
 case 'iqra': {
-	if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
-		oh = `Example : ${prefix + command} 3\n\nIQRA Yang tersedia : 1,2,3,4,5,6`
+			oh = `Example : ${prefix + command} 3\n\nIQRA Yang tersedia : 1,2,3,4,5,6`
 		if (!text) return oh
 		yy = await getBuffer(`https://islamic-api-indonesia.herokuapp.com/api/data/pdf/iqra${text}`)
 		mans.sendMessage(m.chat, {document: yy, mimetype: 'application/pdf', fileName: `iqra${text}.pdf By Lexxy`}, {quoted:m}).catch ((err) => m.reply(oh))
@@ -4534,9 +4424,6 @@ ${id}`)
 case 'jooxplay':   
 case 'joox':
 if (!q) return m.reply(`Kirim perintah ${prefix + command} judul`)
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
 get_result = await fetchJson(`http://api.lolhuman.xyz/api/jooxplay?apikey=${lolkey}&query=${q}`)
                     tkt = `Title : ${get_result.result.info.song}
 Artists : ${get_result.resul.tinfo.singer}
@@ -4550,9 +4437,6 @@ Lirik :\n ${get_result.result.lirik}`
 case 'play': case 'ytplay': {
  fakey(mess.wait)
 if (isBan) return m.reply(mess.ban)
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
 let yts = require("yt-search")
 let search = await yts(text)
 let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
@@ -4585,9 +4469,6 @@ Url : ${anu.url}`,
 case 'ytdl': case 'yt': case 'youtube':{
  fakey(mess.wait)
 if (isBan) return m.reply(mess.ban)
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
 if (!args[0]) return m.reply(mess.linkm)
 try {
 hx.youtube(args[0]).then(async(res) => {
@@ -4626,19 +4507,13 @@ m.reply("Linknya Error!")
 break
 case 'couple': {
                 fakey(mess.wait)
-          if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
-                let anu = await fetchJson('https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json')
+                          let anu = await fetchJson('https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json')
                 let random = anu[Math.floor(Math.random() * anu.length)]
                 mans.sendMessage(m.chat, { image: { url: random.male }, caption: `Couple Male` }, { quoted: m })
                 mans.sendMessage(m.chat, { image: { url: random.female }, caption: `Couple Female` }, { quoted: m })
             }
 	    break
 case 'asupan':
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
  fakey(mess.wait)
 teks = `nih Kak >\\<`
 buffer = `https://api.zacros.my.id/asupan/random`
@@ -4646,9 +4521,6 @@ mans.sendMessage(from, {video:{url:buffer}, mimetype:"video/mp4", caption:"Succe
 break
 case 'asupanukhty':
 case 'asupan-ukhty':
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
  fakey(mess.wait)
 teks = `nih Kak >\\<`
 buffer = `https://api.zacros.my.id/asupan/ukhty`
@@ -4656,36 +4528,24 @@ mans.sendMessage(from, {video:{url:buffer}, mimetype:"video/mp4", caption:"Ini K
 break
 case 'asupan-santuy':
 case 'asupansantuy':
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
  fakey(mess.wait)
 teks = `nih Kak >\\<`
 buffer = `https://api.zacros.my.id/asupan/santuy`
 mans.sendMessage(from, {video:{url:buffer}, mimetype:"video/mp4", caption:"Ini Kak Jangan Lupa Donasi Ya:)"}, {quoted:m})
 break
 case 'hijaber':
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
  fakey(mess.wait)
 teks = `nih Kak >\\<`
 buffer = `https://api.zacros.my.id/asupan/hijaber`
 mans.sendMessage(from, {image:{url:buffer}, caption:"Done!"}, {quoted:m})
 break
 case 'cecan-indo':
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
  fakey(mess.wait)
 teks = `nih Kak >\\<`
 buffer = `https://api.zacros.my.id/asupan/indonesia`
 mans.sendMessage(from, {image:{url:buffer}, caption:"Done!"}, {quoted:m})
 break
 case 'cecan-malaysia':
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
  fakey(mess.wait)
 teks = `nih Kak >\\<`
 buffer = `https://api.zacros.my.id/asupan/malaysia`
@@ -4752,7 +4612,7 @@ teks = `nih Kak >\\<`
 buffer = `https://api.zacros.my.id/randomimg/meme`
 mans.sendMessage(from, {image:{url:buffer}, caption:"Done!"}, {quoted:m})
 break
-case 'fakta-unik':
+case 'faktaunik':
 if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
 kurangLimit(m.sender, 1)
 m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
@@ -4765,7 +4625,6 @@ break
 case 'quotes':
 tes = await fetchJson(`https://api.zacros.my.id/randomtext/quotes`)
 teks = tes.result.quotes
-buffer = `https://telegra.ph/file/7188012d573871aaf4fa0.jpg`
 mans.sendMessage(from, {image:{url:buffer}, caption:teks}, {quoted:m})
 break
 case 'fml':
@@ -4790,7 +4649,7 @@ let buttons = [
                     {buttonId: `dare`, buttonText: {displayText: 'Dare 🎯'}, type: 1}
                 ]
                 let buttonMessage = {
-                    image: { url: 'https://telegra.ph/file/7188012d573871aaf4fa0.jpg' },
+                    image: { url: 'https://telegra.ph/file/10063d91f0f9542ee8de7.jpg' },
                     caption: `${tes.result}`,
                     footer: `Truth Or Dare??\nClick Button`,
                     buttons: buttons,
@@ -4806,7 +4665,7 @@ let buttons = [
                     {buttonId: `dare`, buttonText: {displayText: 'Truth 🎯'}, type: 1}
                 ]
                 let buttonMessage = {
-                    image: { url: 'https://telegra.ph/file/7188012d573871aaf4fa0.jpg' },
+                    image: { url: 'https://telegra.ph/file/10063d91f0f9542ee8de7.jpg' },
                     caption: `${tes.result}`,
                     footer: `Truth Or Dare??\nClick Button`,
                     buttons: buttons,
@@ -4861,10 +4720,7 @@ case 'ytmp3':
   case 'youtubemp3':{
    fakey(mess.wait)
   if (args.length < 1) return reply('linknya?')
-  if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
-   try{
+     try{
     await yta(args[0])
 .then((res) => {
      const { dl_link } = res
@@ -4884,10 +4740,7 @@ case 'ytmp3':
   case 'youtubemp4':{
    fakey(mess.wait)
   if (args.length < 1) return reply('linknya?')
-  if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
-   try{
+     try{
     await ytv(args[0])
 .then((res) => {
      const { dl_link } = res
@@ -4905,10 +4758,7 @@ case 'ytmp3':
   break
 case 'pin':
 case 'pinterest': {
-	             if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
-                fakey(mess.wait)
+	                             fakey(mess.wait)
 		let { pinterest } = require('./lib/scraper')
                 anu = await pinterest(text)
                 result = anu[Math.floor(Math.random() * anu.length)]
@@ -4919,9 +4769,6 @@ case 'swm': case 'stickerwm': {
  fakey(mess.wait)
 if (isBan) return m.reply(mess.ban)
 if (!args.join(" ")) return m.reply(`Example :\nswm Aryaa||77+ | Pack`)
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
 const swn = args.join(" ")
 const pcknm = swn.split("|")[0];
 const atnm = swn.split("|")[1];
@@ -4947,9 +4794,6 @@ case 'invert':
 case 'imageinvert':{
 fakey(mess.wait)
 if (isBan) return m.reply(mess.ban)
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
 if (/image/.test(mime)) {
 let dwnld = await quoted.download()
 let { floNime } = require('./lib/uploader')
@@ -4968,9 +4812,6 @@ case 'wasted':
 case 'imagewasted':{
 fakey(mess.wait)
 if (isBan) return m.reply(mess.ban)
-if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
 if (/image/.test(mime)) {
 let dwnld = await quoted.download()
 let { floNime } = require('./lib/uploader')
@@ -4994,10 +4835,7 @@ mans.sendMessage(from, {image:{url:buffer}, caption:"Done!"}, {quoted:m})
 break
 case 'smeme2': {
 	        let respond = `Kirim/reply image/sticker dengan caption ${prefix + command} text1|text2`
-	        if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
-	        if (!/image/.test(mime)) throw respond
+	        	        if (!/image/.test(mime)) throw respond
             if (!text) throw respond
 	        fakey(mess.wait)
             atas = text.split('|')[0] ? text.split('|')[0] : '-'
@@ -5013,10 +4851,7 @@ case 'smeme2': {
 	      
 case 'smeme': {
 	        let respond = `Kirim/reply image/sticker dengan caption ${prefix + command} |text2`
-	        if (isLimit < 1) return reply("Limit kamu sudah habis , silahkan beli dengan cara #buy limit _jumlah_")
-     db.users[m.sender].limit -= 1 // -1 limit
-     m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limit}`)
-	        if (!/image/.test(mime)) throw respond
+	        	        if (!/image/.test(mime)) throw respond
             if (!text) throw respond
 	        fakey(mess.wait)
 	        atas = text.split('|')[0] ? text.split('|')[0] : '-'
@@ -5033,12 +4868,12 @@ case 'sticker': case 's': {
 if (isBan) return m.reply(mess.ban)
 if (/image/.test(mime)) {
 let media = await quoted.download()
-let encmedia = await mans.sendImageAsSticker(m.chat, media, m, { packname: global.packname, author: global.packname2 })
+let encmedia = await mans.sendImageAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
 await fs.unlinkSync(encmedia)
 } else if (/video/.test(mime)) {
 if ((quoted.msg || quoted).seconds > 11) return m.reply('Maksimal 10 detik!')
 let media = await quoted.download()
-let encmedia = await mans.sendVideoAsSticker(m.chat, media, m, { packname: global.packname, author: global.packname2 })
+let encmedia = await mans.sendVideoAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
 await fs.unlinkSync(encmedia)
 } else {
 m.reply(`Kirim Gambar/Video Dengan Caption ${prefix + command}\nDurasi Video 1-9 Detik`)
@@ -5305,72 +5140,72 @@ case 'bj':case 'ero':case 'cum':case 'feet':case 'yuri':case 'trap':case 'lewd':
     break
 case 'cry':	anu = `http://api.lolhuman.xyz/api/random/cry?apikey=${lolkey}`
 fakey(mess.wait)
-mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.packname2 })
+mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.author })
 break
 case 'kiss3':	
 anu = `http://api.lolhuman.xyz/api/random/kiss?apikey=${lolkey}`
 fakey(mess.wait)
-mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.packname2 })
+mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.author })
 break
 case 'kiss2':	
 anu = `http://api.lolhuman.xyz/api/random2/kiss?apikey=${lolkey}`
 fakey(mess.wait)
-mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.packname2 })
+mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.author })
 break
 case 'cringe':
 		anu = `http://api.lolhuman.xyz/api/random/cringe?apikey=${lolkey}`
 fakey(mess.wait)
-mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.packname2 })
+mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.author })
 break
 case 'dance':	
 anu = `http://api.lolhuman.xyz/api/random/dance?apikey=${lolkey}`
 fakey(mess.wait)
-mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.packname2 })
+mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.author })
 break
 case 'kill':	
 anu = `http://api.lolhuman.xyz/api/random/kill?apikey=${lolkey}`
 fakey(mess.wait)
-mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.packname2 })
+mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.author })
 break
 case 'happy':	
 anu = `http://api.lolhuman.xyz/api/random/happy?apikey=${lolkey}`
 fakey(mess.wait)
-mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.packname2 })
+mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.author })
 break
 case 'patrick':	
 anu = `http://api.lolhuman.xyz/api/sticker/patrick?apikey=${lolkey}`
 fakey(mess.wait)
-mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.packname2 })
+mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.author })
 break
 case 'bonk':	
 anu = `http://api.lolhuman.xyz/api/random/bonk?apikey=${lolkey}`
 fakey(mess.wait)
-mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.packname2 })
+mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.author })
 break
 case 'smug2':	
 anu = `http://api.lolhuman.xyz/api/random/smug?apikey=${lolkey}`
 fakey(mess.wait)
-mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.packname2 })
+mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.author })
 break
 case 'slap':	
 anu = `http://api.lolhuman.xyz/api/random/slap?apikey=${lolkey}`
 fakey(mess.wait)
-mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.packname2 })
+mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.author })
 break
 case 'wave':	
 anu = `http://api.lolhuman.xyz/api/random/wave?apikey=${lolkey}`
 fakey(mess.wait)
-mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.packname2 })
+mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.author })
 break
 case 'smile':	
 anu = `http://api.lolhuman.xyz/api/random/smile?apikey=${lolkey}`
 fakey(mess.wait)
-mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.packname2 })
+mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.author })
 break
 case 'bully':
 		anu = `http://api.lolhuman.xyz/api/random/bully?apikey=${lolkey}`
 fakey(mess.wait)
-mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.packname2 })
+mans.sendImageAsSticker(m.chat, anu, m, { packname:global.packname, author: global.author })
 break
 case 'art':case 'bts':case 'exo':case 'elf':case 'loli':case 'neko':case 'shota':case 'sagiri':case 'shinobu':case 'megumin':case 'wallnime':   
 
