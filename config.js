@@ -20,7 +20,7 @@ global.sessionName = "session"
 global.namebot = "༄Aryaa Bot࿐"
 global.linkgrupss = "https://chat.whatsapp.com/LA3er9fsk891HtvVkisuza"
 global.antitags = false
-global.prefa = ['','!','.','🐦','🐤','🗿']
+global.prefa = ['!','.','🐦','🐤','🗿']
 global.mess = {
     success: '*Success!*',
     admin: '*Fitur Khusus Admin Group!*',
