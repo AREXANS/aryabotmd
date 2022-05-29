@@ -1093,7 +1093,7 @@ message: {
 } 
 //FAKEREPLY TEXT WITH THUMBNAIL
 const fakey = (teks) => {
-            mans.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `Join Jadi Hengker 😎`,"body": `Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./media/fenzo.jpg`),"sourceUrl": "https://chat.whatsapp.com/LA3er9fsk891HtvVkisuza"}}}, { quoted: m})
+            mans.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `Gausah Join Gk Penting`,"body": `Grup Whatsapp Bot`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./media/aryaa.png`),"sourceUrl": "https://chat.whatsapp.com/LA3er9fsk891HtvVkisuza"}}}, { quoted: m})
         }
 const ftextt = {
 key: { 
