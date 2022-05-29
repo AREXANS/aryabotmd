@@ -1093,7 +1093,7 @@ message: {
 } 
 //FAKEREPLY TEXT WITH THUMBNAIL
 const fakey = (teks) => {
-            mans.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `Gausah Join Gk Penting`,"body": `Grup Whatsapp Bot`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./media/aryaa.jpg`),"sourceUrl": "https://chat.whatsapp.com/LA3er9fsk891HtvVkisuza"}}}, { quoted: m})
+            mans.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `Gausah Join Gk Penting`,"body": `Grup Whatsapp Bot`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./media/fenzo.jpg`),"sourceUrl": "https://chat.whatsapp.com/LA3er9fsk891HtvVkisuza"}}}, { quoted: m})
         }
 const ftextt = {
 key: { 
@@ -4619,13 +4619,13 @@ m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limi
  fakey(mess.wait)
 tes = await fetchJson(`https://api.zacros.my.id/randomtext/faktaunik`)
 teks = tes.result
-buffer = `https://telegra.ph/file/dcd94851554d89a015c5e.jpg`
+buffer = `https://telegra.ph/file/10063d91f0f9542ee8de7.jpg`
 mans.sendMessage(from, {image:{url:buffer}, caption:teks}, {quoted:m})
 break
 case 'quotes':
 tes = await fetchJson(`https://api.zacros.my.id/randomtext/quotes`)
 teks = tes.result.quotes
-buffer = `https://telegra.ph/file/dcd94851554d89a015c5e.jpg`
+buffer = `https://telegra.ph/file/10063d91f0f9542ee8de7.jpg`
 mans.sendMessage(from, {image:{url:buffer}, caption:teks}, {quoted:m})
 break
 case 'fml':
