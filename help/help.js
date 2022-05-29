@@ -283,7 +283,6 @@ exports.help = (prefix, l) => {
 ❏ .holo
 ❏ .tits
 ❏ .kuni
-❏ .kiss
 ❏ .erok
 ❏ .smug
 ❏ .baka
@@ -321,8 +320,6 @@ exports.help = (prefix, l) => {
 
 ┌─「 Sticker Random 」
 ❏ .cry
-❏ .kiss
-❏ .kiss2
 ❏ .dance
 ❏ .cringe
 ❏ .smug2
