@@ -261,7 +261,7 @@ exports.help = (prefix, l) => {
 ❏ .wikimedia <query>
 ❏ .quotesanime
 ❏ .couple
-❏ .fakta-unik
+❏ .faktaunik
 ❏ .quotes
 ❏ .galau
 ❏ .cerpen
